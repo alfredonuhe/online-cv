@@ -5,7 +5,7 @@ import SectionSet from '../../components/SectionSet';
 import ScrollButton from '../../components/ScrollButton';
 import DetailPresentation from '../../components/DetailPresentation';
 
-const Details = (jsonDoc) => {
+const Details = (props) => {
     const { id } = useParams();
     const navigate = useNavigate();
     const regex = /^0[0-6]{1}$/.test(id);
@@ -17,7 +17,7 @@ const Details = (jsonDoc) => {
     }, []);
 
     if (regex) {
-        var page = jsonDoc.jsonDoc.projects[id];
+        var page = props.config.projects[id];
         return (
             <>
                 <DetailPresentation page={page}/>

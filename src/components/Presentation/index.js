@@ -1,9 +1,10 @@
 import React from 'react';
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import { createScripts, loadScriptsSequential, removeScripts, getResourcePath } from '../../utils/script_loader';
+import {getResourcePath} from '../../utils/utilities';
+import {createScripts, loadScriptsSequential, removeScripts} from '../../utils/script_loader';
 
 const Presentation = (info) => {
     info = info.info;

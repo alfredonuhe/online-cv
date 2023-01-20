@@ -4,8 +4,8 @@ import Presentation from '../../components/Presentation';
 import SectionSet from '../../components/SectionSet';
 import MainNav from '../../components/MainNav';
 
-const Home = (jsonDoc) => {
-    var page = jsonDoc.jsonDoc.home;
+const Home = (props) => {
+    var page = props.config.home;
     return (
         <>
             <Presentation info={page}/>

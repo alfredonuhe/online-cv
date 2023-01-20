@@ -1,4 +1,4 @@
-import jsonConfig from '../static/json/config';
+import { getResourcePath } from "./utilities";
 
 /**
  * File dedicated to offering utility functions
@@ -84,16 +84,4 @@ function waitForScriptToLoad(selector, callback, checkFrequencyInMs, timeoutInMs
   })();
 }
 
-/**
- * Calculates path of resource depending on project path.
- * @param {String} path path of resource
- */
-function getResourcePath(path='') {
-  var configPath = jsonConfig.repositoryName;
-  var noPrefix = (configPath == '' || configPath == '/' 
-    || (path.length > 0 && !path.includes('/static/')));
-  var prefix = (noPrefix) ? '' : '/' + configPath;
-  return prefix + path;
-}
-
-export {createScripts, loadScriptsSequential, removeScripts, getResourcePath};
+export {createScripts, loadScriptsSequential, removeScripts};

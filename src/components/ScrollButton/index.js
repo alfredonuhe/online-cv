@@ -1,6 +1,6 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { createScripts, loadScriptsSequential, removeScripts } from '../../utils/script_loader';
+import {useEffect} from 'react';
+import {createScripts, loadScriptsSequential, removeScripts} from '../../utils/script_loader';
 
 const ScrollButton = () => {
     useEffect(() => {
