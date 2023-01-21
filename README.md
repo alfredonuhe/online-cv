@@ -29,7 +29,7 @@
 
 ## Usage
 
-:warning: **WARNING: This project can be forked with the condition you respect the attribution requirements stated in the license.**
+:warning: **WARNING: This project can be forked with the condition to respect the attribution requirements stated in the license.**
 
 ## Installation
 
