@@ -11,11 +11,12 @@ import './static/css/scroll_to_top_button.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // Load app if json configuration file is available.
-const config = getJsonConfig();
-root.render(
-    <App config={config}/>
-);
-
+const promise = getJsonConfig();
+promise.then(config => {
+    root.render(
+        <App config ={config}/>
+    );
+});
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

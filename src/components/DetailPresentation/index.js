@@ -4,9 +4,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {getResourcePath} from '../../utils/utilities';
 
-const DetailPresentation = (page) => {
-    page = page.page;
-    const prop_value = 'url("' + getResourcePath(page.presentationImagePath) + '")';
+const DetailPresentation = (props) => {
+    var config = props.config;
+    var page = props.page;
+    const prop_value = 'url("' + getResourcePath(config, page.presentationImagePath) + '")';
     const b_image={backgroundImage: prop_value};
     return (
         <Container className='no-padding' fluid>

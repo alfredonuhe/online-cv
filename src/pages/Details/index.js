@@ -17,13 +17,14 @@ const Details = (props) => {
     }, []);
 
     if (regex) {
+        var config = props.config;
         var page = props.config.projects[id];
         return (
             <>
-                <DetailPresentation page={page}/>
-                <DetailNav sections={page.sections}/>
-                <SectionSet sections={page.sections}/>
-                <ScrollButton />
+                <DetailPresentation config={config} page={page}/>
+                <DetailNav config={config} sections={page.sections}/>
+                <SectionSet config={config} sections={page.sections}/>
+                <ScrollButton config={config}/>
             </>
         );
     }

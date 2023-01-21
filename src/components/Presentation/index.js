@@ -6,15 +6,16 @@ import Container from 'react-bootstrap/Container';
 import {getResourcePath} from '../../utils/utilities';
 import {createScripts, loadScriptsSequential, removeScripts} from '../../utils/script_loader';
 
-const Presentation = (info) => {
-    info = info.info;
+const Presentation = (props) => {
+    var config = props.config;
+    var info = props.info;
     useEffect(() => {
         const scriptUrls = [
           '/static/js/vanta/three.min.js',
           '/static/js/vanta/vanta.waves.min.js',
           '/static/js/vanta_background.js'
         ];
-        var scripts = createScripts(scriptUrls, 'presentation');
+        var scripts = createScripts(config, scriptUrls, 'presentation');
         loadScriptsSequential(scripts, '#app-2');
         return function () {return removeScripts(scripts)};
       }, []);
@@ -59,7 +60,7 @@ const Presentation = (info) => {
                             <Row className='pad-top-5'>
                                 <Col className='text-center'>
                                     <img className="rounded-circle border border-2 profile-picture"
-                                        src={getResourcePath(info.photoPath)} alt="Profile"></img>
+                                        src={getResourcePath(config, info.photoPath)} alt="Profile"></img>
                                 </Col>
                             </Row>
                             <Row>

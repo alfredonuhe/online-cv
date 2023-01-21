@@ -1,4 +1,4 @@
-import { getResourcePath } from "./utilities";
+import {getResourcePath} from "./utilities";
 
 /**
  * File dedicated to offering utility functions
@@ -10,11 +10,11 @@ import { getResourcePath } from "./utilities";
  * @param {Array} scripts paths to scripts.
  * @param {String} idPrefix prefix for each tag id.
  */
-function createScripts(scripts, idPrefix){
+function createScripts(config, scripts, idPrefix){
   var result = [];
   for (var i in scripts){
     var script = document.createElement("script");
-    script.src = getResourcePath(scripts[i]);
+    script.src = getResourcePath(config, scripts[i]);
     script.async = true;
     script.id = idPrefix+'-'+i;
     script.onload = function () {
