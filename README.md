@@ -6,7 +6,7 @@
 </div>
 </br></br>
 <p align="center">
-  An <b>easy to setup</b> online cv/resume using a configurable <a href="https://github.com/alfredonuhe/online-cv/blob/gh-pages/static/json/config.json">JSON file</a> and GitHub Pages. For an example, see the <a href="https://alfredonuhe.github.io/online-cv/">demo</a>.
+  An <b>easy to setup</b> online cv/resume using a configurable <a href="https://github.com/alfredonuhe/online-cv/blob/gh-pages/config.json">JSON file</a> and GitHub Pages. For an example, see the <a href="https://alfredonuhe.github.io/online-cv/">demo</a>.
 </p>
 <p align="center">
   <a href="https://twitter.com/intent/tweet?text=An%20easy%20to%20set%20up%20personal%20website%20using%20a%20JSON%20configuration%20file:%20&url=https://github.com/alfredonuhe/online-cv" target="_blank">
@@ -29,15 +29,15 @@
 
 ## Usage
 
-:warning: **WARNING: I am sharing this project with you for your own use, but with the condition you maintain the copyright notice visible at the footer of the website.**
+:warning: **WARNING: I am sharing this project with you with the condition you respect the attribution requirements stated in the license.**
 
 ## Installation
 
 It is **very easy** to setup your own online cv without coding:
 
-* Fork repository and name it.
-* Go to Settings and setup GitHub Pages to work using the gh-pages branch. For more information follow the [official documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch).
-* Populate the [JSON configuration file](https://github.com/alfredonuhe/online-cv/blob/gh-pages/static/json/config.json) with your own text and images. In the configuration file, for the key "repositoryName", add your repository name only if you aren't using your own username. In case of using your own username, leave it as an empty string.
+* Fork repository and name it. Select to copy all branches.
+* Go to Settings and setup GitHub Pages to work with the gh-pages branch and serve from the root folder. For more information follow the [official documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch).
+* Populate the [JSON configuration file](https://github.com/alfredonuhe/online-cv/blob/gh-pages/config.json) with your own text and images.
 * That's it! Enjoy!
 
 ## Additional notes
