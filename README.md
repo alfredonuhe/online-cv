@@ -33,9 +33,9 @@
 
 ## Installation
 
-It is **very easy** to setup your own online cv without coding:
+It is **very easy** to setup your own online cv **without coding**:
 
-* Fork repository and name it. Select to copy all branches.
+* Fork the repository and name it. Select to copy all branches.
 * Go to Settings and setup GitHub Pages to work with the gh-pages branch and serve from the root folder. For more information follow the [official documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch).
 * Edit the [JSON configuration file](https://github.com/alfredonuhe/online-cv/blob/gh-pages/config.json) with your own text and images.
 * That's it! Enjoy!
@@ -46,4 +46,4 @@ The webapp allows two kind of pages. The home page of the cv, and detail pages. 
 
 Every page has a presentation section, a navigation bar, a set of sections, and a footer. The type, order, and content of the sections are configurable. If the order of section changes, it automatically updates the navigation bar items' order. The presentation section is also configurable by changing the title and backgound image.
 
-The Elon Musk demo is a good example, because it showcases all the configurable elements of the online cv.
+The [demo](https://alfredonuhe.github.io/online-cv/) is a good example to see all the configurable elements of the online cv.
