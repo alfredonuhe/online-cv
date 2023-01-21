@@ -37,7 +37,7 @@ It is **very easy** to setup your own online cv without coding:
 
 * Fork repository and name it. Select to copy all branches.
 * Go to Settings and setup GitHub Pages to work with the gh-pages branch and serve from the root folder. For more information follow the [official documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch).
-* Populate the [JSON configuration file](https://github.com/alfredonuhe/online-cv/blob/gh-pages/config.json) with your own text and images.
+* Edit the [JSON configuration file](https://github.com/alfredonuhe/online-cv/blob/gh-pages/config.json) with your own text and images.
 * That's it! Enjoy!
 
 ## Additional notes
